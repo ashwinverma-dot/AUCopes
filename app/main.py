@@ -65,19 +65,19 @@ COURSES = [
 
 FACULTY = [
     {
-        "name": "Dr. Anil Sharma",
-        "designation": "Professor and Head",
+        "name": "Prof. Ashwin Verma",
+        "designation": "Assistant Professor",
         "department": "Computer Science and Engineering",
         "specialization": "Cloud Computing, Distributed Systems"
     },
     {
-        "name": "Dr. Neha Patel",
-        "designation": "Associate Professor",
-        "department": "Information Technology",
+        "name": "Dr. Chandan Trivedi",
+        "designation": "Assistant Professor",
+        "department": "Computer Science and Engineering",
         "specialization": "Database Systems, Web Technologies"
     },
     {
-        "name": "Prof. Rahul Verma",
+        "name": "Dr. Umesh Bodkhe",
         "designation": "Assistant Professor",
         "department": "Electronics and Communication Engineering",
         "specialization": "IoT, Embedded Systems"
