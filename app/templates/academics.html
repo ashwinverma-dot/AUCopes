@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="page-section">
+    <h1>Departments and Courses</h1>
+    <p>
+        This page lists the major academic departments and basic courses offered
+        by the college. The data is stored in the Flask application and rendered
+        dynamically on the web page.
+    </p>
+</section>
+
+<section class="page-section">
+    <h2>Departments</h2>
+    <div class="department-grid">
+        {% for department in departments %}
+        <div class="department-card">
+            <h3>{{ department.code }} - {{ department.name }}</h3>
+            <p>{{ department.description }}</p>
+        </div>
+        {% endfor %}
+    </div>
+</section>
+
+<section class="page-section">
+    <h2>Courses Offered</h2>
+    <table>
+        <tr>
+            <th>Course</th>
+            <th>Level</th>
+            <th>Duration</th>
+            <th>Details</th>
+        </tr>
+        {% for course in courses %}
+        <tr>
+            <td>{{ course.name }}</td>
+            <td>{{ course.level }}</td>
+            <td>{{ course.duration }}</td>
+            <td>{{ course.details }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</section>
+{% endblock %}

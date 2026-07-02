@@ -1,0 +1,63 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="hero">
+    <div class="hero-content">
+        <p class="tagline">Cloud-Based Web Application</p>
+        <h1>College Information Portal with CI/CD Pipeline</h1>
+        <p>
+            This web application provides basic college information, department details,
+            course information, faculty profiles, and a simple enquiry form. The project
+            is developed using Flask and prepared for cloud deployment using Docker and
+            GitHub Actions.
+        </p>
+        <a class="btn" href="{{ url_for('academics') }}">View Departments</a>
+    </div>
+</section>
+
+<section class="overview">
+    <h2>About the College</h2>
+    <p>
+        The college provides undergraduate, postgraduate, and research programs in
+        engineering, computer applications, and applied technology. The institution
+        focuses on academic excellence, practical learning, technical skill development,
+        and industry-oriented education.
+    </p>
+</section>
+
+<section class="cards">
+    <div class="card">
+        <h3>Vision</h3>
+        <p>
+            To become a center of excellence in technical education, innovation,
+            research, and professional development.
+        </p>
+    </div>
+
+    <div class="card">
+        <h3>Mission</h3>
+        <p>
+            To provide quality education, develop technical competence, encourage
+            research, and prepare students for industry and society.
+        </p>
+    </div>
+
+    <div class="card">
+        <h3>CI/CD Enabled</h3>
+        <p>
+            The project includes automated testing, Docker containerization, and
+            deployment support through GitHub Actions.
+        </p>
+    </div>
+</section>
+
+<section class="pipeline">
+    <h2>CI/CD Pipeline Flow</h2>
+    <div class="pipeline-box">
+        <span>Code Push</span>
+        <span>Run Tests</span>
+        <span>Build Docker Image</span>
+        <span>Deploy to Cloud</span>
+    </div>
+</section>
+{% endblock %}

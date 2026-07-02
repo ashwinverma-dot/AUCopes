@@ -1,0 +1,65 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="page-section">
+    <h1>Faculty Details and Contact</h1>
+    <p>
+        This page displays sample faculty details and provides a basic enquiry form.
+        The form demonstrates how Flask can handle user input through a web page.
+    </p>
+</section>
+
+<section class="page-section">
+    <h2>Faculty Members</h2>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Designation</th>
+            <th>Department</th>
+            <th>Specialization</th>
+        </tr>
+        {% for member in faculty %}
+        <tr>
+            <td>{{ member.name }}</td>
+            <td>{{ member.designation }}</td>
+            <td>{{ member.department }}</td>
+            <td>{{ member.specialization }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</section>
+
+<section class="page-section contact-layout">
+    <div>
+        <h2>College Contact Details</h2>
+        <p><strong>Address:</strong> Knowledge Park, Main Road, Ahmedabad, Gujarat</p>
+        <p><strong>Email:</strong> info@collegeportal.edu</p>
+        <p><strong>Phone:</strong> +91-99999-99999</p>
+        <p>
+            These details are sample values and can be replaced with actual college
+            information before final deployment.
+        </p>
+    </div>
+
+    <div>
+        <h2>Enquiry Form</h2>
+
+        {% if success_message %}
+            <div class="alert">{{ success_message }}</div>
+        {% endif %}
+
+        <form method="POST" class="contact-form">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name">
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email">
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Enter your enquiry"></textarea>
+
+            <button type="submit">Submit Enquiry</button>
+        </form>
+    </div>
+</section>
+{% endblock %}
