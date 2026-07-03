@@ -83,13 +83,13 @@ FACULTY = [
         "specialization": "IoT, Embedded Systems"
     },
     {
-        "name": "Dr. Priya Singh",
+        "name": "Dr. Sanjay Patel",
         "designation": "Associate Professor",
         "department": "Mechanical Engineering",
         "specialization": "Robotics, Manufacturing Systems"
     },
     {
-        "name": "Prof. Meera Joshi",
+        "name": "Dr. Kanu Patel",
         "designation": "Assistant Professor",
         "department": "Civil Engineering",
         "specialization": "Structural Engineering, Construction Management"
