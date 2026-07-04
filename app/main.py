@@ -91,7 +91,7 @@ FACULTY = [
     {
         "name": "Dr. Kanu Patel",
         "designation": "Assistant Professor",
-        "department": "Civil Engineering",
+        "department": "CSE Engineering",
         "specialization": "Structural Engineering, Construction Management"
     }
 ]
